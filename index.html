@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Electric vehicles</title>
+    <!-- Script -->
+    <!-- <script src="JS/snap.svg.js"></script> -->
+     <script src="JS/snap.svg-min.js"></script>
+     <script src="JS/gsap.min.js"></script>
+     <script src="JS/script.js"></script>
+</head>
+<body>
+    <div class="rond_souris"></div>
+    <header class="flex centre">
+        <img class="taille_3" src="logo_neyYorkTimes.png" alt="logo">
+        <h3>The New York Times</h3>
+    </header>
+    <h1 class="title margeGD padding_top_5">Are electric cars soon on all our streets?</h1>
+    <p class="margeGD">     Nowadays, it is important to think about our daily carbon emissions. Some reduce it by 
+        paying attention to their electricity or gas consumption, others by traveling by public transport, by bike 
+        or even on foot. But some choose the electric car, which allows them to travel without polluting too much. 
+        The EU aims to stop the sale of thermal engines in 2035, but is this possible for all countries?  For the 
+        French government, the challenge is to increase their sales to reach 15% of electric vehicles by 2030.</p>
+    <div class="flex centre padding_top_3"><img class="animation-image margeGD taille_50" src="images/photo_article.png" alt="voiture electrique"></div>
+    <p class="margeGD padding_top_3">     To achieve this figure, for example, residents of the Auvergne Rhône Alpes 
+        region have access to aid of 3,000 euros for the acquisition of an electric 
+        vehicle since 2023. This article, focused on the Rhône department, will make 
+        it possible to analyze several data, to make it possible to observe whether 
+        the number of charging infrastructures evolves with electric cars.</p>
+    <h2 class="margeGD padding_top_3">An achievable goal ?</h2>
+    <p class="margeGD">     In the Rhône, from 2020 to 2024, the number of electric vehicles will increase 
+        by around 2.4%, reaching 57,122 compared to 1,689,763 for other types. This market 
+        is gradually starting to grow over the years. However, if we look at the graph, 
+        a very strong increase in sales would be necessary to be able to reach the objective 
+        of 15% in 2030.</p>
+    <div class="flex centre"><svg class="taille_50 margeGD" id="graphique" width="1000" height="500"></svg></div>
+    <h4 class="margeGD">Display options :</h4>
+    <button class="margeGD" id="bouton">Masquer les voitures</button>
+    <button class="margeGD" id="nb_voitures">Afficher nombre de voitures électriques</button>
+    <p class="margeGD padding_top_3">Even if the objective seems unattainable, it would be possible to get closer by improving 
+        one point: the terminals.</p>
+    <h2 class="margeGD padding_top_3">Why aren't more electric cars on French roads ?</h2>
+    <p class="margeGD">     92% of individuals who own one live in a private home, and 88% recharge at home. The problem 
+        is obvious if we compare the number of terminals and the number of electric vehicles. Even 
+        if both evolve from year to year, increased installation of terminals would be necessary to 
+        meet demand. </p>
+    <div class="flex centre"><h4 class="margeGD padding_top_3">Comparison between the number of charging points and electric vehicles in the Rhone</h4></div>
+    <div class="flex centre padding_top_3"><img class="margeGD taille_50" src="images/graphique2.png" alt="graphique comparaison bornes/voitures"></div>
+    <p class="margeGD padding_top_3">If we take the average of vehicles per municipality which is 205 and that of the terminals which 
+        is 3, the considerable difference justifies that those residing in communities do not have them 
+        due to charging problems. Which suggests that if everyone can have access to a terminal not far 
+        from their place of residence, the number of electric vehicles would be much higher. All the same, 
+        thanks to comparison calculations, there is a link between electric cars and charging points, the 
+        municipalities with the most charging points are those where the cars are the most numerous.</p>
+    <h2 class="margeGD padding_top_3">Is the distribution of terminals fair ?</h2>
+    <p class="margeGD">	    Finally, are the location of terminals and the number of charging points linked? The Rhône has 
+        a total of 852 charging points, for an average of 3 charging points per municipality. Most often the
+         terminals are located on the road which has 139 different locations. Public car parks come last with 
+         only 6 locations throughout the department. Thanks to the correlation ratio (between 1 and 0) between 
+         these two variables, it is possible to say whether there is a link (close to 1) or not (close to 0). 
+         The result obtained is 0.07. The numbers of charging points are therefore not linked to their locations. 
+         These are therefore decided by the person who sets it up, no slice is given depending on the location.</p>
+    <div class="flex centre padding_top_3"><img class="margeGD taille_50" src="images/borne.png" alt="photo_bornes"></div>
+    <h2 class="margeGD padding_top_3">Asmall conclusion from our analysis</h2>
+    <p class="margeGD">     To conclude, the advancement of electric cars is very slow, the objective of 15% of these vehicles by 
+        2030 is not currently achievable, due to the lack of infrastructure which is very minimal compared to the 
+        number of vehicles, even if they increase over the years. Also, people living in collective residences are 
+        hampered by this lack of terminals, which limits the purchase of electric vehicles. So to optimize their 
+        development, the installation of many more terminals is necessary. So is a 100% electric target for 2050 
+        too ambitious or achievable?</p>
+    <footer class="padding_top_5 flex centre">
+        <h3 class="margeGD">The New York Times</h3>
+    </footer>
+</body>
+</html>
